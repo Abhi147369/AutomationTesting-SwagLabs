@@ -9,7 +9,7 @@ class CartPage:
     checkout_information_name_id = "first-name"
     checkout_information_last_name_id = "last-name"
     checkout_information_zipcode_id = "postal-code"
-    continue_button_id = "checkout"
+    continue_button_id = "continue"
 
     def __init__(self, driver):
         self.driver = driver
