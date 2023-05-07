@@ -1,0 +1,32 @@
+1681985512398	geckodriver	INFO	Listening on 127.0.0.1:55209
+1681985515429	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55210" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\gavka\\AppData\\Local\\Temp\\rust_mozprofileapH1ky"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681985515945	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681985515952	Marionette	INFO	Listening on port 55221
+Read port: 55221
+WebDriver BiDi listening on ws://127.0.0.1:55210
+1681985516130	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gavka\\AppData\\Local\\Temp\\rust_mozprofileapH1ky\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:55210/devtools/browser/b30349c3-0033-499b-829c-8660c0d522e1
+1681985522817	Marionette	INFO	Stopped listening on port 55221
+Dynamically enable window occlusion 1
+1681985523546	geckodriver	INFO	Listening on 127.0.0.1:55248
+1681985526567	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55249" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\gavka\\AppData\\Local\\Temp\\rust_mozprofilewG50fV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681985526822	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681985526826	Marionette	INFO	Listening on port 55256
+Read port: 55256
+WebDriver BiDi listening on ws://127.0.0.1:55249
+1681985526984	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gavka\\AppData\\Local\\Temp\\rust_mozprofilewG50fV\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:55249/devtools/browser/8e241a3f-68e5-4661-b0a9-dbf4dab79b9d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1681985569991	Marionette	INFO	Stopped listening on port 55256
+Dynamically enable window occlusion 1
