@@ -20,3 +20,12 @@ def pytest_addoption(parser):
 @pytest.fixture()
 def browser(request):
     return request.config.getoption("--browser")
+
+
+############# Pytest HTML Report ##################
+
+def pytest_configure(config):
+    config._metadata['Project Name'] = 'SwagLabs'
+    config._metadata['Module Name'] = 'Customers'
+    config._metadata['Tester'] = 'Abhishek Gavkare'
+
