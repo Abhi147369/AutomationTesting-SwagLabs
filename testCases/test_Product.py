@@ -1,5 +1,7 @@
 import time
 
+import pytest
+
 from PageObject.LoginPage import LoginPage
 from PageObject.ProductPage import ProductPage
 from utilities.readProperties import ReadConfig
@@ -10,6 +12,8 @@ class Test__003_Product:
     username = ReadConfig.getUsername()
     password = ReadConfig.getPassword()
 
+    @pytest.mark.Sanity
+    @pytest.mark.Regression
     def test_backpack(self, setup):
         self.driver = setup
         self.driver.get(self.baseURL)
@@ -23,6 +27,8 @@ class Test__003_Product:
         self.pp.backpack()
         self.driver.close()
 
+    @pytest.mark.Sanity
+    @pytest.mark.Regression
     def test_add_to_cart(self, setup):
         self.driver = setup
         self.driver.get(self.baseURL)
@@ -36,6 +42,8 @@ class Test__003_Product:
         self.pp.addToCart()
         self.driver.close()
 
+    @pytest.mark.Sanity
+    @pytest.mark.Regression
     def test_cart(self, setup):
         self.driver = setup
         self.driver.get(self.baseURL)

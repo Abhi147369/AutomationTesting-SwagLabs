@@ -1,3 +1,5 @@
+import pytest
+
 from PageObject.CartPage import CartPage
 from PageObject.LoginPage import LoginPage
 from PageObject.ProductPage import ProductPage
@@ -12,8 +14,9 @@ class Test__004_Cart:
     checkoutInformationLastName = ReadConfig.getchceckoutInformationLastName()
     checkoutInformationZipcode = ReadConfig.getchceckoutInformationZipcode()
 
+    @pytest.mark.Regression
+    @pytest.mark.Sanity
     def test_cart(self, setup):
-
         self.driver = setup
         self.driver.get(self.baseURL)
 
@@ -29,8 +32,10 @@ class Test__004_Cart:
 
         self.cart = CartPage(self.driver)
         self.cart.checkout()
-        self.driver.quit()
+        self.driver.close()
 
+    @pytest.mark.Regression
+    @pytest.mark.Sanity
     def test_checkoutInformationName(self, setup):
         self.driver = setup
         self.driver.get(self.baseURL)
@@ -52,7 +57,4 @@ class Test__004_Cart:
         self.cart.checkoutInformationZipcode(self.checkoutInformationZipcode)
 
         self.cart.clickContinueButton()
-        self.driver.quit()
-
-
-
+        self.driver.close()
