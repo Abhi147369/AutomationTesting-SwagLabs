@@ -8,6 +8,8 @@ def setup(browser):
         driver = webdriver.Chrome()
     elif browser == 'firefox':
         driver = webdriver.Firefox()
+    elif browser == 'edge':
+        driver = webdriver.Edge()
     else:
         driver = webdriver.Chrome()
     return driver
@@ -28,4 +30,3 @@ def pytest_configure(config):
     config._metadata['Project Name'] = 'SwagLabs'
     config._metadata['Module Name'] = 'Customers'
     config._metadata['Tester'] = 'Abhishek Gavkare'
-
