@@ -2,8 +2,8 @@ from selenium import webdriver
 import pytest
 
 
-@pytest.fixture()
-def setup(browser):
+@pytest.fixture(autouse=True)
+def setup(browser, request):
     if browser == 'chrome':
         driver = webdriver.Chrome()
     elif browser == 'firefox':
@@ -15,11 +15,12 @@ def setup(browser):
     return driver
 
 
+
 def pytest_addoption(parser):
     parser.addoption("--browser")
 
 
-@pytest.fixture()
+@pytest.fixture(autouse=True)
 def browser(request):
     return request.config.getoption("--browser")
 

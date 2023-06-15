@@ -21,18 +21,26 @@ class ReadConfig:
         return password
 
     @staticmethod
-    def getchceckoutInformationName():
-        chceckoutInformationName = config.get('checkout info', 'chceckoutInformationName')
-        return chceckoutInformationName
+    def checkoutInformationName():
+        checkoutInformationName = config.get('checkout info', 'checkoutInformationName')
+        return checkoutInformationName
 
     @staticmethod
-    def getchceckoutInformationLastName():
-        chceckoutInformationLastName = config.get('checkout info', 'chceckoutInformationLastName')
-        return chceckoutInformationLastName
+    def checkoutInformationLastName():
+        checkoutInformationLastName = config.get('checkout info', 'checkoutInformationLastName')
+        return checkoutInformationLastName
 
     @staticmethod
-    def getchceckoutInformationZipcode():
-        chceckoutInformationZipcode = config.get('checkout info', 'chceckoutInformationZipcode')
-        return chceckoutInformationZipcode
+    def checkoutInformationZipcode():
+        checkoutInformationZipcode = config.get('checkout info', 'checkoutInformationZipcode')
+        return checkoutInformationZipcode
 
+    @staticmethod
+    def wrongUsername():
+        wrongUsername = config.get('common info', 'wrongUsername')
+        return wrongUsername
 
+    @staticmethod
+    def wrongPassword():
+        wrongPassword = config.get('common info', 'wrongPassword')
+        return wrongPassword

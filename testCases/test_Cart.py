@@ -10,9 +10,9 @@ class Test__004_Cart:
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUsername()
     password = ReadConfig.getPassword()
-    checkoutInformationName = ReadConfig.getchceckoutInformationName()
-    checkoutInformationLastName = ReadConfig.getchceckoutInformationLastName()
-    checkoutInformationZipcode = ReadConfig.getchceckoutInformationZipcode()
+    checkoutInformationName = ReadConfig.checkoutInformationName()
+    checkoutInformationLastName = ReadConfig.checkoutInformationLastName()
+    checkoutInformationZipcode = ReadConfig.checkoutInformationZipcode()
 
     @pytest.mark.Regression
     @pytest.mark.Sanity
